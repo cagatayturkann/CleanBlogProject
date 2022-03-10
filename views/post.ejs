@@ -18,7 +18,7 @@
             
             <span class="meta">Posted by
               <a href="#">Start Bootstrap</a>
-              on August 24, 2019</span>
+              on <span><%= post.dateCreated %></span></span>
           </div>
         </div>
       </div>
@@ -29,8 +29,12 @@
   <article>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-10 col-md-10 mx-auto">
           <%= post.detail %> 
+        </div>
+        <div class="col-lg-2 col-md-2">
+          <a href="/posts/edit/<%= post._id %> " type="submit" class="btn btn-primary">Edit</a>
+          <a href="/posts/<%= post.id %>?_method=DELETE" type="submit" class="btn btn-danger mt-3" onclick="return confirm('Are You Sure')">Delete</a>
         </div>
       </div>
     </div>
