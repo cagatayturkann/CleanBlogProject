@@ -26,7 +26,7 @@
 <h2>Installation</h2>
 <ul>
 <li>Firstly clone this project and enter the directory<br>
-<code>git clone https://github.com/cagatayturkann/CleanBlogProject</code><br><code>cd PCATNodeProject</code></li>
+<code>git clone https://github.com/cagatayturkann/CleanBlogProject</code><br><code>cd CleanBlogProject</code></li>
 <li>Install all the dependencies<br>
 <code>npm install</code></li>
 <li>Change the mongodb url with your local or online url, inside an app.js file</li>
